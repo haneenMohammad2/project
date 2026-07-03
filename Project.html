@@ -1,0 +1,1031 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haneen Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg,#727bc0,#5d69b3);
+            padding: 18px 60px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
+        }
+
+        .logo {
+            color: white;
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 45px;
+        }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                position: relative;
+                transition: .3s;
+            }
+                .nav-links a::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                    width: 0;
+                    height: 3px;
+                    background: white;
+                    transition: .3s;
+                }
+
+                .nav-links a:hover::after {
+                    width: 100%;
+                }
+
+                .nav-links a:hover {
+                    color: #1f4f86;
+                }
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 60px;
+        }
+
+        .hero-text {
+            width: 55%;
+            text-align: center;
+            color: #1f4f86;
+        }
+
+            .hero-text h1 {
+                font-size: 52px;
+                margin-bottom: 25px;
+            }
+
+            .hero-text h3 {
+                font-size: 34px;
+                color: #6F84B7;
+                margin-bottom: 35px;
+            }
+
+            .hero-text p {
+                font-size: 20px;
+                line-height: 1.8;
+                max-width: 700px;
+                margin: 0 auto 45px;
+            }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: #7890bd;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 12px;
+            transition: .3s ease;
+        }
+
+            .btn:hover {
+                background-color: #1f4f86;
+                transform: translateY(-4px);
+            }
+
+        .secondary {
+            background-color: #7890bd;
+        }
+
+        .hero-image {
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            background-color: #727bc0;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,.15);
+        }
+
+            .hero-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        /* About */   
+        .about-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .about-section {
+            min-height: 650px;
+            background-color: white;
+        }
+
+        .section-title {
+            background-color: #7890bd;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+            .section-title h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            .section-title p {
+                font-size: 22px;
+                font-weight: bold;
+            }
+            
+
+        .about-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 70px 80px;
+        }
+
+        .about-box {
+            width: 40%;
+            background: white;
+            border: 2px solid #7890bd;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(120,144,189,.20);
+            padding: 35px;
+            text-align: center;
+            transition: .4s ease;
+        }
+
+            .about-box:hover {
+                background: #7890bd;
+                color: white;
+                transform: translateY(-10px);
+            }
+
+            .about-box h3 {
+                font-size: 28px;
+                margin-bottom: 35px;
+                color: inherit;
+            }
+
+            .about-box h4 {
+                font-size: 22px;
+                margin-top: 25px;
+                color: inherit;
+            }
+
+            .about-box p {
+                font-size: 20px;
+                line-height: 1.5;
+                margin-bottom: 18px;
+                color: inherit;
+            }
+        /* Skills */
+
+        .skills-section {
+            min-height: 700px;
+            background: white;
+        }
+
+        .skills-title {
+            background: #7890bd;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+            .skills-title h2 {
+                font-size: 30px;
+            }
+
+        .skills-text {
+            text-align: center;
+            color: #1e63b6;
+            font-size: 28px;
+            margin: 45px 0;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 20px 80px;
+        }
+
+        .skill-card {
+            width: 220px;
+            height: 170px;
+            background: white;
+            color: #355C8C;
+            border: 2px solid #7890bd;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: 0.4s;
+        }
+
+            .skill-card h3 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .skill-card p {
+                font-size: 18px;
+            }
+
+            .skill-card:hover {
+                background: #7890bd;
+                color: white;
+                transform: translateY(-10px);
+                box-shadow: 0 10px 25px rgba(0,0,0,.2);
+            }
+        /* Projects */
+
+        .projects-section {
+            min-height: 750px;
+            background: white;
+        }
+
+        .projects-title {
+            background: #7890bd;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+            .projects-title h2 {
+                font-size: 30px;
+            }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 55px;
+            padding: 60px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            width: 280px;
+            min-height: 470px;
+            background: white;
+            color: #355C8C;
+            border: 2px solid #7890bd;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(120,144,189,.20);
+            padding: 25px;
+            transition: .4s;
+        }
+
+            .project-card:hover {
+                background: #7890bd;
+                color: white;
+                transform: translateY(-10px);
+                box-shadow: 0 12px 25px rgba(120,144,189,.35);
+            }
+
+            .project-card h3 {
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+
+            .project-card p {
+                margin-bottom: 20px;
+                line-height: 1.4;
+                font-size: 17px;
+            }
+
+            .project-card a {
+                color: #355C8C;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .project-card:hover a {
+                color: white;
+            }
+        /* Experience */
+
+        .experience-section {
+            min-height: 700px;
+            background: white;
+        }
+
+        .experience-title {
+            background: #7890bd;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+            .experience-title h2 {
+                font-size: 30px;
+            }
+
+        .experience-container {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            padding: 60px;
+            flex-wrap: wrap;
+        }
+
+        .experience-card {
+            width: 400px;
+            min-height: 380px;
+            background: white;
+            color: #355C8C;
+            border: 2px solid #7890bd;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(120,144,189,.20);
+            padding: 30px;
+            transition: .4s;
+        }
+
+            .experience-card:hover {
+                background: #7890bd;
+                color: white;
+                transform: translateY(-10px);
+                box-shadow: 0 12px 25px rgba(120,144,189,.35);
+            }
+
+            .experience-card h3 {
+                text-align: center;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .experience-card h4 {
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+        .date {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .experience-card:hover li {
+            color: white;
+        }
+
+        .experience-card:hover h3 {
+            color: white;
+        }
+
+        .experience-card:hover h4 {
+            color: white;
+        }
+
+        .experience-card:hover .date {
+            color: white;
+        }
+        /* Contact */
+
+        .contact-section {
+            min-height: 600px;
+            background: white;
+        }
+
+        .contact-title {
+            background: #7890bd;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+            .contact-title h2 {
+                font-size: 30px;
+            }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 70px;
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
+            width: 340px;
+            background: white;
+            color: #355C8C;
+            border: 2px solid #7890bd;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(120,144,189,.20);
+            text-align: center;
+            padding: 35px;
+            transition: .4s ease;
+        }
+        .social-link {
+            display: inline-block !important;
+            color: #355C8C !important;
+            font-size: 22px !important;
+            font-weight: bold !important;
+            text-decoration: none !important;
+        }
+
+            .social-link:hover {
+                text-decoration: underline !important;
+            }
+
+            .contact-card:hover {
+                background: #7890bd;
+                color: white;
+                transform: translateY(-10px);
+            }
+
+            .contact-card p {
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 25px;
+            }
+
+            .contact-card span {
+                display: block;
+                margin-top: 8px;
+                font-size: 20px;
+            }
+
+        .contact-card a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+            
+
+            .contact-card:hover a {
+                color: white;
+            }
+
+            .contact-card a:hover {
+                text-decoration: underline;
+            }
+
+        .contact-text {
+            width: 420px;
+            text-align: center;
+            color: #355C8C;
+            font-size: 26px;
+            line-height: 1.5;
+        }
+        /* =========================
+   Footer
+========================= */
+
+        .footer {
+            background: #6F84B7;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 40px 60px;
+        }
+
+        .footer-box {
+            width: 30%;
+            min-width: 220px;
+        }
+
+            .footer-box h3 {
+                font-size: 30px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            .footer-box p {
+                font-family: "Segoe UI", Arial, sans-serif;
+                align-items: center;
+                margin: 8px 0;
+                line-height: 1.6;
+                color: white;
+                font-weight: initial;
+            }
+
+
+            .footer-box a {
+                font-family: "Segoe UI", Arial, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 15px 0;
+                font-weight: initial;
+            }
+
+                .footer-box a:hover {
+                    text-decoration: underline;
+                }
+
+        .footer-bottom {
+            background: #3f4568;
+            padding: 15px;
+            font-size: 18px;
+        }
+        /* =========================
+   Responsive Design
+========================= */
+
+        @media (max-width: 1024px) {
+
+            .navbar {
+                padding: 0 30px;
+            }
+
+            .nav-links {
+                gap: 25px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                width: 90%;
+            }
+
+            .about-box {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                height: auto;
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .hero-text {
+                width: 100%;
+            }
+
+                .hero-text h1 {
+                    font-size: 36px;
+                }
+
+                .hero-text h3 {
+                    font-size: 26px;
+                }
+
+                .hero-text p {
+                    font-size: 17px;
+                }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero-image {
+                width: 260px;
+                height: 260px;
+                margin-top: 30px;
+            }
+
+            .about-container,
+            .skills-container,
+            .projects-container,
+            .experience-container,
+            .contact-container {
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 30px;
+            }
+
+            .about-box,
+            .project-card,
+            .experience-card,
+            .contact-card,
+            .contact-text {
+                width: 100%;
+            }
+
+            .skills-text {
+                font-size: 20px;
+                padding: 0 20px;
+            }
+
+            .skill-card {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            /* Footer */
+
+            .footer-content {
+                flex-direction: column;
+                align-items: end;
+            }
+
+            .footer-box {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+                
+        }
+    </style>
+  
+
+
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <h2 class="logo">Haneen</h2>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Haneen Alnusiriat</h1>
+            <h3>Frontend Developer</h3>
+
+            <p>
+                For me, web development is more than writing code.
+                It's about creating experiences that people enjoy using.
+                I love learning new things, solving problems, and challenging myself with every project.
+                My goal is to build beautiful and functional websites.
+            </p>
+
+            <div class="hero-buttons">
+                <a target="_blank" href="#contact" class="btn">Contact Me</a>
+                <a target="_blank" href="https://drive.google.com/uc?export=download&id=13oMvWoziwLsg2CRlk5AvfF11uGvupR6j" class="btn secondary">Download CV</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="haneen.jpeg" alt="Haneen profile photo">
+        </div>
+    </section>
+    <section id="about" class="about-section">
+
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Get to know me better</p>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-box">
+                <h3>My Story</h3>
+
+                <p>
+                    My journey into web development began with curiosity and a love for creating.
+                    I enjoy building clean, responsive websites and improving my skills with every project.
+                    My goal is to grow as a Frontend Developer and create modern web experiences that are both beautiful and functional.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Education</h3>
+
+                <h4>Bachelor's Degree</h4>
+                <p>Cybersecurity</p>
+
+                <h4>Current Focus</h4>
+                <p>Frontend Development</p>
+
+                <h4>Career Goal</h4>
+                <p>Professional Frontend Developer</p>
+
+                <h4>Learning</h4>
+                <p>HTML • CSS • Git • GitHub</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="skills" class="skills-section">
+
+        <div class="skills-title">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="skills-text">
+            <p>Technologies and tools I'm learning and using.</p>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Clean Structure</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Modern Styling</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>UI/UX Design</h3>
+                <p>User-Friendly Interfaces</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Teamwork</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Problem Solving</h3>
+                <p>Logical & Creative Thinking</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="projects" class="projects-section">
+
+        <div class="projects-title">
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A responsive portfolio website
+                    showcasing my skills and projects.
+                </p>
+
+                <p><strong>HTML5 • CSS3</strong></p>
+
+                <p>
+                    <strong>Problem:</strong>
+                    Build a professional portfolio
+                    without frameworks.
+                </p>
+
+                <p>
+                    <strong>Solution:</strong>
+                    Designed and developed a clean
+                    responsive portfolio.
+                </p>
+
+                <a class="social-link" href="https://github.com/haneenMohammad2/HTML-Task.git" target="_blank">🔗 GitHub Repository</a>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>HTML Practice Tasks</h3>
+
+                <p>
+                    A collection of HTML practice
+                    tasks completed during training.
+                </p>
+
+                <p><strong>HTML5</strong></p>
+
+                <p>
+                    <strong>Problem:</strong>
+                    Learn semantic HTML and page structure.
+                </p>
+
+                <p>
+                    <strong>Solution:</strong>
+                    Built forms, tables, images,
+                    lists, and multimedia.
+                </p>
+
+                <a class="social-link" href="https://github.com/haneenMohammad2/HTML-Task.git" target="_blank">🔗 GitHub Repository</a>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>CSS Practice Tasks</h3>
+
+                <p>
+                    Practice projects focused on layouts
+                    and responsive design.
+                </p>
+
+                <p><strong>HTML5 • CSS3</strong></p>
+
+                <p>
+                    <strong>Problem:</strong>
+                    Improve CSS styling and
+                    responsive layouts.
+                </p>
+
+                <p>
+                    <strong>Solution:</strong>
+                    Created clean layouts using
+                    modern CSS techniques.
+                </p>
+
+                <a class="social-link" href="https://github.com/haneenMohammad2/HTML-Task.git" target="_blank">🔗 GitHub Repository</a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="experience" class="experience-section">
+
+        <div class="experience-title">
+            <h2>Experience</h2>
+        </div>
+
+        <div class="experience-container">
+
+            <div class="experience-card">
+
+                <h3>🛡️ Cyber Shield</h3>
+
+                <h4>Cybersecurity Intern</h4>
+
+                <p class="date">2025</p>
+
+                <ul>
+                    <li>Assisted in handling sensitive information securely.</li>
+                    <li>Prepared reports and documentation.</li>
+                    <li>Worked in a collaborative team environment.</li>
+                </ul>
+
+            </div>
+
+            <div class="experience-card">
+
+                <h3>🟠 Orange Jordan</h3>
+
+                <h4>Frontend Development Trainee</h4>
+
+                <p class="date">Jul 2026 – Present</p>
+
+                <ul>
+                    <li>Learning HTML, CSS, Git, and GitHub.</li>
+                    <li>Building responsive web pages.</li>
+                    <li>Improving frontend skills through practical projects.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contact" class="contact-section">
+
+        <div class="contact-title">
+            <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+
+                <p>📧 Email</p>
+                <span>haneenmoh775@gmail.com</span>
+
+                <p>📱 Phone</p>
+                <span>+962 799862070</span>
+                <p>
+                    <a class="social-link" href="https://github.com/haneenMohammad2" target="_blank">
+                        💻 GitHub
+                    </a>
+                </p>
+
+                <p>
+                    <a class="social-link" href="https://www.linkedin.com/in/haneen-alnusiriat-8130073a8" target="_blank">
+                        🔗 LinkedIn
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="contact-text">
+
+                <p>
+                    Let's connect! I'm always open to new opportunities,
+                    collaborations, and meaningful conversations.
+                </p>
+
+            </div>
+
+        </div>
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <div class="footer-box">
+                    <h3>Haneen Alnusiriat</h3>
+                    <p>Frontend Developer • Always Learning</p>
+                    <p>Building Modern Websites</p>
+
+                </div>
+
+                <div class="footer-box">
+                    <h3>My Skills  </h3>
+                    <p> •HTML5 & CSS3</p>
+                    <p> •Responsive Design</p>
+                    <p> •Clean UI</p>
+                    <p> •Continuous Learning</p>
+
+                </div>
+
+                <div class="footer-box">
+                    <h3>Let's Connect</h3>
+                    <a href="https://github.com/haneenMohammad2" target="_blank"> 💻GitHub</a>
+                    <a href="https://www.linkedin.com/in/haneen-alnusiriat-8130073a8" target="_blank"> 🔗LinkedIn</a>
+                    <a href="mailto:haneenmoh775@gmail.com"> 📧Email</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Haneen Alnusiriat | Built with HTML & CSS</p>
+            </div>
+
+        </footer>
+
+    </section>
+   
+</body>
+</html>
