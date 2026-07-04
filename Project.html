@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -269,6 +269,13 @@
             text-align: center;
             transition: 0.4s;
         }
+        .skills-subtitle {
+            text-align: center;
+            font-size: 28px;
+            color: #355C8C;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
 
             .skill-card h3 {
                 font-size: 22px;
@@ -306,29 +313,48 @@
         .projects-container {
             display: flex;
             justify-content: center;
-            gap: 55px;
-            padding: 60px;
+            gap: 30px;
             flex-wrap: wrap;
+            padding: 60px 40px;
         }
-
         .project-card {
-            width: 280px;
-            min-height: 470px;
+            width: 350px;
             background: white;
-            color: #355C8C;
             border: 2px solid #7890bd;
             border-radius: 18px;
-            box-shadow: 0 8px 20px rgba(120,144,189,.20);
-            padding: 25px;
-            transition: .4s;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,.12);
+            transition: .3s;
         }
 
-            .project-card:hover {
-                background: #7890bd;
-                color: white;
-                transform: translateY(-10px);
-                box-shadow: 0 12px 25px rgba(120,144,189,.35);
-            }
+
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .tech-tags span {
+            display: inline-block;
+            background: #7890bd;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+        .github-btn {
+            margin-top: auto;
+        }
+
+
+        .project-card:hover {
+            background: #7890bd;
+            color: white;
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(120,144,189,.35);
+        }
 
             .project-card h3 {
                 text-align: center;
@@ -362,6 +388,7 @@
             background: #7890bd;
             color: white;
             text-align: center;
+
             padding: 30px;
         }
 
@@ -373,13 +400,13 @@
             display: flex;
             justify-content: center;
             gap: 80px;
-            padding: 60px;
+            padding: 100px 60px 60px;
+            margin-top: 30px;
             flex-wrap: wrap;
         }
 
         .experience-card {
             width: 400px;
-            min-height: 380px;
             background: white;
             color: #355C8C;
             border: 2px solid #7890bd;
@@ -581,6 +608,8 @@
             background: #3f4568;
             padding: 15px;
             font-size: 18px;
+            color:white;
+            text-align:center;
         }
         /* =========================
    Responsive Design
@@ -684,17 +713,7 @@
                 max-width: 320px;
             }
 
-            /* Footer */
-
-            .footer-content {
-                flex-direction: column;
-                align-items: end;
-            }
-
-            .footer-box {
-                width: 100%;
-                margin-bottom: 30px;
-            }
+            
                 
         }
     </style>
@@ -777,15 +796,18 @@
         </div>
 
     </section>
+    <!-- Skills -->
     <section id="skills" class="skills-section">
 
         <div class="skills-title">
             <h2>Skills</h2>
         </div>
 
-        <div class="skills-text">
-            <p>Technologies and tools I'm learning and using.</p>
-        </div>
+        <!-- Technical Skills -->
+
+        <h3 class="skills-subtitle">Technical Skills</h3>
+
+
 
         <div class="skills-container">
 
@@ -800,113 +822,109 @@
             </div>
 
             <div class="skill-card">
-                <h3>UI/UX Design</h3>
-                <p>User-Friendly Interfaces</p>
+                <h3>JavaScript</h3>
+                <p>Interactive Web Pages</p>
             </div>
 
             <div class="skill-card">
+                <h3>Git & GitHub</h3>
+                <p>Version Control</p>
+            </div>
+
+        </div>
+
+        <!-- Soft Skills -->
+
+        <h3 class="skills-subtitle">Soft Skills</h3>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
                 <h3>Teamwork</h3>
+                <p>Working Effectively with Others</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Communication</h3>
+                <p>Clear Communication</p>
             </div>
 
             <div class="skill-card">
                 <h3>Problem Solving</h3>
-                <p>Logical & Creative Thinking</p>
+                <p>Logical Thinking</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Self-Motivated</h3>
+                <p>Committed to continuous improvement.</p>
             </div>
 
         </div>
 
     </section>
+
+    <!-- Projects -->
     <section id="projects" class="projects-section">
 
         <div class="projects-title">
-            <h2>My Projects</h2>
+            <h2>Projects</h2>
         </div>
 
         <div class="projects-container">
 
             <div class="project-card">
+                <img src="project.png" alt="Portfolio">
 
                 <h3>Personal Portfolio</h3>
 
-                <p>
-                    A responsive portfolio website
-                    showcasing my skills and projects.
-                </p>
+                <p>A responsive portfolio website showcasing my work and skills.</p>
 
-                <p><strong>HTML5 • CSS3</strong></p>
+                <div class="tech-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
 
-                <p>
-                    <strong>Problem:</strong>
-                    Build a professional portfolio
-                    without frameworks.
-                </p>
-
-                <p>
-                    <strong>Solution:</strong>
-                    Designed and developed a clean
-                    responsive portfolio.
-                </p>
-
-                <a class="social-link" href="https://github.com/haneenMohammad2/project.git" target="_blank">🔗 GitHub Repository</a>
-
+                <a class="github-btn" href="https://github.com/haneenMohammad2/project.git" target="_blank">
+                    View on GitHub
+                </a>
             </div>
 
             <div class="project-card">
+                <img src="html.jpg" alt="HTML Tasks">
 
                 <h3>HTML Practice Tasks</h3>
 
-                <p>
-                    A collection of HTML practice
-                    tasks completed during training.
-                </p>
+                <p>Collection of HTML exercises completed during training.</p>
 
-                <p><strong>HTML5</strong></p>
+                <div class="tech-tags">
+                    <span>HTML5</span>
+                </div>
 
-                <p>
-                    <strong>Problem:</strong>
-                    Learn semantic HTML and page structure.
-                </p>
-
-                <p>
-                    <strong>Solution:</strong>
-                    Built forms, tables, images,
-                    lists, and multimedia.
-                </p>
-
-                <a class="social-link" href="https://github.com/haneenMohammad2/HTML-Task.git" target="_blank">🔗 GitHub Repository</a>
-
+                <a class="github-btn" href="https://github.com/haneenMohammad2/HTML-Task.git" target="_blank">
+                    View on GitHub
+                </a>
             </div>
 
             <div class="project-card">
+                <img src="css.png" alt="CSS Tasks">
 
                 <h3>CSS Practice Tasks</h3>
 
-                <p>
-                    Practice projects focused on layouts
-                    and responsive design.
-                </p>
+                <p>Responsive layouts and modern CSS practice projects.</p>
 
-                <p><strong>HTML5 • CSS3</strong></p>
+                <div class="tech-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
 
-                <p>
-                    <strong>Problem:</strong>
-                    Improve CSS styling and
-                    responsive layouts.
-                </p>
-
-                <p>
-                    <strong>Solution:</strong>
-                    Created clean layouts using
-                    modern CSS techniques.
-                </p>
-
-                <a class="social-link" href="https://github.com/haneenMohammad2/HTML-Task.git" target="_blank">🔗 GitHub Repository</a>
-
+                <a class="github-btn" href="https://github.com/haneenMohammad2/HTML-Task.git" target="_blank">
+                    View on GitHub
+                </a>
             </div>
 
         </div>
-
     </section>
+    <!-- experience-->
     <section id="experience" class="experience-section">
 
         <div class="experience-title">
@@ -924,9 +942,10 @@
                 <p class="date">2025</p>
 
                 <ul>
-                    <li>Assisted in handling sensitive information securely.</li>
-                    <li>Prepared reports and documentation.</li>
-                    <li>Worked in a collaborative team environment.</li>
+                    <li>Assisted in cybersecurity tasks.</li>
+                    <li>Prepared technical documentation.</li>
+                    <li>Collaborated with the security team.</li>
+
                 </ul>
 
             </div>
@@ -940,9 +959,10 @@
                 <p class="date">Jul 2026 – Present</p>
 
                 <ul>
-                    <li>Learning HTML, CSS, Git, and GitHub.</li>
+                    <li>Learning HTML, CSS & JavaScript.</li>
+                    
                     <li>Building responsive web pages.</li>
-                    <li>Improving frontend skills through practical projects.</li>
+                    <li>Using Git & GitHub for version control.</li>
                 </ul>
 
             </div>
@@ -990,34 +1010,7 @@
             </div>
 
         </div>
-        <footer class="footer">
-
-            <div class="footer-content">
-
-                <div class="footer-box">
-                    <h3>Haneen Alnusiriat</h3>
-                    <p>Frontend Developer • Always Learning</p>
-                    <p>Building Modern Websites</p>
-
-                </div>
-
-                <div class="footer-box">
-                    <h3>My Skills  </h3>
-                    <p> •HTML5 & CSS3</p>
-                    <p> •Responsive Design</p>
-                    <p> •Clean UI</p>
-                    <p> •Continuous Learning</p>
-
-                </div>
-
-                <div class="footer-box">
-                    <h3>Let's Connect</h3>
-                    <a href="https://github.com/haneenMohammad2" target="_blank"> 💻GitHub</a>
-                    <a href="https://www.linkedin.com/in/haneen-alnusiriat-8130073a8" target="_blank"> 🔗LinkedIn</a>
-                    <a href="mailto:haneenmoh775@gmail.com"> 📧Email</a>
-                </div>
-
-            </div>
+        <footer>
 
             <div class="footer-bottom">
                 <p>© 2026 Haneen Alnusiriat | Built with HTML & CSS</p>
@@ -1026,6 +1019,6 @@
         </footer>
 
     </section>
-   
+
 </body>
 </html>
